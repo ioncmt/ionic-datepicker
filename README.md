@@ -56,7 +56,6 @@ Your config method may look like this if you wish to setup the configuration. Bu
       mondayFirst: false,
       weeksList: ["S", "M", "T", "W", "T", "F", "S"],
       monthsList: ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
-      templateType: 'popup',
       from: new Date(2012, 8, 1),
       to: new Date(2018, 8, 1),
       showTodayButton: true,
@@ -112,8 +111,6 @@ The properties you can configure are as follows.
       new Date(1439676000000) //UNIX format
   ];
 ````
-
-**j) templateType**(Optional) : This is string type which takes two values i.e. `modal` or `popup`. Default value is `modal`. If you wish to open in a popup, you can specify the value as `popup` or else you can ignore it.
 
 **k) from**(Optional) : This is a date object, from which you wish to enable the dates. You can use this property to disable **previous dates** by specifying `from: new Date()`. By default all the dates are enabled. Please note that months are 0 based.
 
