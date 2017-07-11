@@ -6,8 +6,9 @@ angular.module('ionic-datepicker.service', [])
 
     this.getYearsList = function (from, to) {
       var yearsList = [];
-      var minYear = 1900;
-      var maxYear = 2100;
+      var currentYear = new Date().getFullYear();
+      var minYear = currentYear - 5;
+      var maxYear = currentYear + 5;
 
       minYear = from ? new Date(from).getFullYear() : minYear;
       maxYear = to ? new Date(to).getFullYear() : maxYear;
