@@ -1,6 +1,6 @@
 {
   "name": "ionic-datepicker",
-  "version": "1.2.1-cmt4",
+  "version": "1.2.1-cmt5",
   "description": "A date picker for ionic framework",
   "main": "./dist/ionic-datepicker.bundle.min.js",
   "scripts": {},

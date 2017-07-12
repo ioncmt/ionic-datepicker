@@ -13,6 +13,7 @@ angular.module('ionic-datepicker.provider', [])
       monthsList: ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
       showTodayButton: false,
       closeOnSelect: false,
+      closeOnViewChange: true,
       disableWeekdays: []
     };
 
@@ -228,6 +229,12 @@ angular.module('ionic-datepicker.provider', [])
                 e.preventDefault();
               }
             }
+          });
+        }
+
+        if($scope.mainObj.closeOnViewChange) {
+          $rootScope.$on('$ionicView.beforeLeave', function() {
+            $scope.popup.close();
           });
         }
 
